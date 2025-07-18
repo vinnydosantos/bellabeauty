@@ -400,7 +400,7 @@ Se perguntarem sobre reserva, responda: "MOSTRAR_FORMULARIO_RESERVA"
 Se perguntarem sobre consultar reservas, responda: "BUSCAR_RESERVAS_CLIENTE"
 Seja simpática e use linguagem brasileira.`;
 
-            const response = await fetch('/.netlify/functions/claude-proxy', {
+            const response = await fetch('functions/claude-proxy.js', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
