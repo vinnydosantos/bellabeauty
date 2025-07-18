@@ -1,6 +1,7 @@
 [build]
-functions = "dist/functions"
-publish = "dist"
+functions = "functions"
+publish = "."
 command = "npm run build"
 
 [functions]
+directory = "functions"
