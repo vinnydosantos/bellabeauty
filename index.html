@@ -419,6 +419,11 @@ Seja simpática e use linguagem brasileira.`;
                 } catch (e) {
                     errorData = { error: 'Network error' };
                 }
+                try {
+                    errorData = await response.json();
+                } catch (e) {
+                    errorData = { error: 'Network error' };
+                }
                 throw new Error(`Erro: ${response.status} - ${errorData.error || 'Erro desconhecido'}`);
             }
 
