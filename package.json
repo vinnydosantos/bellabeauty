@@ -1,1 +1,15 @@
+{
+  "name": "bellabeauty",
+  "version": "1.0.0",
+  "description": "AI Bella Beauty APP - Chatbot and Admin Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp *.html dist/ && mkdir -p dist/functions && cp functions/* dist/functions/ && echo 'Build completed successfully'",
+    "start": "http-server . -p 3000 -c-1",
+    "dev": "http-server . -p 3000 -c-1"
+  },
+  "keywords": ["beauty", "salon", "chatbot", "dashboard"],
+  "author": "",
+  "license": "ISC"
+}
 
