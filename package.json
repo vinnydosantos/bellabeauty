@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "mkdir -p dist && cp *.html dist/ && echo 'Build completed successfully'",
-    "start": "python3 -m http.server 3000",
-    "dev": "python3 -m http.server 3000"
+    "start": "http-server . -p 3000 -c-1",
+    "dev": "http-server . -p 3000 -c-1"
   },
   "keywords": ["beauty", "salon", "chatbot", "dashboard"],
   "author": "",
