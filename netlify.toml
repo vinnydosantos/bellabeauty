@@ -1,7 +1,11 @@
 [build]
-functions = "functions"
-publish = "."
-command = "npm run build"
+  functions = "functions"
+  publish = "."
 
 [functions]
-directory = "functions"
+  directory = "functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
