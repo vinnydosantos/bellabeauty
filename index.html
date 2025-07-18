@@ -413,7 +413,12 @@ Seja simpática e use linguagem brasileira.`;
             });
 
             if (!response.ok) {
-                const errorData = await response.json();
+                let errorData;
+                try {
+                    errorData = await response.json();
+                } catch (e) {
+                    errorData = { error: 'Network error' };
+                }
                 throw new Error(`Erro: ${response.status} - ${errorData.error || 'Erro desconhecido'}`);
             }
 
