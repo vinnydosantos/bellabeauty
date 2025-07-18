@@ -1,0 +1,15 @@
+{
+  "name": "bellabeauty",
+  "version": "1.0.0",
+  "description": "AI Bella Beauty APP - Chatbot and Admin Dashboard",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Build completed - static files ready'",
+    "start": "echo 'Static application - open index.html or dashboard.html in browser'",
+    "dev": "echo 'Development mode - open index.html or dashboard.html in browser'"
+  },
+  "keywords": ["beauty", "salon", "chatbot", "dashboard"],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
